@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Swiper CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Css file -->
@@ -20,7 +22,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mahmoud</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -30,16 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active fs-5" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
+                        <a class="nav-link active fs-5" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#skills">Skills</a>
+                        <a class="nav-link active fs-5" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                        <a class="nav-link active fs-5" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +51,7 @@
     <!-- Hero -->
     <section class="hero py-5 mt-3">
         <div class="container">
-            <div class="row align-items-center flex-column">
+            <div class="row justify-content-center align-items-center flex-column vh-100">
                 <div class="text-center col-md-6">
                     <b class="text-center mainColor">About Me</b>
                     <h1 class="h4 fw-bold py-3">Hello,<br /> I’m Working As Full-Stack Developer.</h1>
@@ -121,7 +123,7 @@
                 </div>
                 <div class="col-md-6 text-center mx-auto text-md-end">
                     <div class="personalImgage ">
-                        <img src="imgs/pesonal-img.AVIF" class="img-fluid fitImg  rounded" alt="personlaImg">
+                        <img src="imgs/mahmoud.png" class="img-fluid fitImg  rounded" alt="personlaImg">
                     </div>
                 </div>
             </div>
@@ -168,8 +170,8 @@
                         <div class="skill-item my-4">
                             <h4>CSS</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="92"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="92%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="92%">
                                 </div>
                             </div>
                         </div>
@@ -186,8 +188,8 @@
                         <div class="skill-item my-4">
                             <h4>JavaScript</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"  aria-valuenow="88"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="88%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="88%">
                                 </div>
                             </div>
                         </div>
@@ -196,8 +198,8 @@
                         <div class="skill-item  my-4">
                             <h4>React JS</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="90%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="90%">
                                 </div>
                             </div>
                         </div>
@@ -205,8 +207,8 @@
                         <div class="skill-item my-4">
                             <h4>Node JS</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="95%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="95%">
                                 </div>
                             </div>
                         </div>
@@ -216,8 +218,8 @@
                         <div class="skill-item  my-4">
                             <h4>express</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="93"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="93%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="93%">
                                 </div>
                             </div>
                         </div>
@@ -225,8 +227,8 @@
                         <div class="skill-item my-4">
                             <h4>MongoDB</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="96"
-                                    aria-valuemin="0" style="width: 0%;" aria-valuemax="100" data_width="96%">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0"
+                                    style="width: 0%;" aria-valuemax="100" data_width="96%">
                                 </div>
                             </div>
                         </div>
@@ -249,7 +251,8 @@
                         <img src="imgs/Travel.PNG" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0 h-100 opacity-75">
-                        <a href="https://travel-system-pink.vercel.app/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://travel-system-pink.vercel.app/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
                 <div class="projectCard text-center position-relative">
@@ -257,7 +260,8 @@
                         <img src="imgs/project2.AVIF" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://courza.net/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://courza.net/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
                 <div class="projectCard text-center position-relative">
@@ -265,7 +269,8 @@
                         <img src="imgs/project3.AVIF" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://mahmoud709.github.io/AmairCompany/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://mahmoud709.github.io/AmairCompany/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
                 <div class="projectCard text-center position-relative">
@@ -273,7 +278,8 @@
                         <img src="imgs/project4.AVIF" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://perwerde.net/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://perwerde.net/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
                 <div class="projectCard text-center position-relative">
@@ -281,7 +287,8 @@
                         <img src="imgs/project5.AVIF" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://rames.tech/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://rames.tech/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
                 <div class="projectCard text-center position-relative">
@@ -289,13 +296,48 @@
                         <img src="imgs/project6.AVIF" alt="project1" style="width: 100%;">
                     </div>
                     <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://mahmoud709.github.io/E-commerce-Site/" target="_blank"><button class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                        <a href="https://mahmoud709.github.io/E-commerce-Site/" target="_blank"><button
+                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- <section class="parent">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </section> -->
 
 
     <!-- Contact -->
@@ -367,7 +409,26 @@
             </section>
         </div>
     </footer>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+    </script>
     <!-- Font a wesome library -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4964aa4896.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
