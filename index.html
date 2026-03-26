@@ -4,432 +4,571 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmoud Shalaby</title>
-    <link rel="shortcut icon" href="imgs/favicon.AVIF" type="image/x-icon">
-    <!-- Google Font -->
+    <title>Mahmoud Shalaby | React Developer</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Swiper CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Bootstrap CSS -->
+    <!-- Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mahmoud</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Mahmoud.</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5" href="#contact">Contact</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero py-5 mt-3">
-        <div class="container">
-            <div class="row justify-content-center align-items-center flex-column vh-100">
-                <div class="text-center col-md-6">
-                    <b class="text-center mainColor">About Me</b>
-                    <h1 class="h4 fw-bold py-3">Hello,<br /> I’m Working As Full-Stack Developer.</h1>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="imgs/banner.AVIF" class="img-fluid" alt="homeBanner">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Icons -->
-    <section class="icons my-5 container text-center">
-        <div class=" row">
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/html-5.webp" class="w-50" alt="html-5" loading="lazy">
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/css-3.webp" class="w-50 " alt="css-3" loading="lazy">
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/js.webp" class="w-50" alt="JavaScript" loading="lazy">
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/reactjs.webp" class="w-50" alt="reactjs" loading="lazy">
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/nodejs.webp" class="w-50" alt="nodejs" loading="lazy">
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="icon-img my-3">
-                    <img src="imgs/mongodb-icon.svg" class="w-50" alt="mongodb-icon" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="bg-light">
-        <div class="container">
-            <div class="section-title row py-5">
-                <div class="service-info col-md-6">
-                    <span class="textTitle fw-bold mainColor">My Services</span>
-                    <h2 class="py-3">
-                        <span class="background">Build your website</span> and grow your
-                        business
-                    </h2>
-                    <p class="lh-sm fw-bold">
-                        I can give your business a new creative start right away! You can
-                        download my resume in order to learn the details of my professional
-                        life as a developer.
+    <!-- Professional Summary (Hero) -->
+    <section id="about" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+        <div class="hero-bg-glow"></div>
+        <div class="container position-relative z-1 pt-5">
+            <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 mt-5 mt-lg-0 text-center text-lg-start" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <div class="badge-tag mb-4 d-inline-block">Dynamic React.js Developer</div>
+                    <h1 class="display-3 fw-bold mb-4">
+                        Building <span class="text-gradient">high-performance</span><br>
+                        web applications.
+                    </h1>
+                    <p class="text-subtle fs-5 mb-5 mx-auto mx-lg-0 w-lg-75">
+                        Over 2 years of experience specialized in scalable architecture, responsive UI design, and
+                        performance optimization. Expert in React.js, Next.js, and TypeScript.
                     </p>
-                    <div class="service-list">
-                        <ul class="p-3">
-                            <li>Convert PSD, XD, or Sketch designs to html</li>
-                            <li>Create interactive user interfaces</li>
-                            <li>Optimize website performance</li>
-                            <li>Develop server-side applications</li>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="www.linkedin.com/in/mahmoud-shalaby-a361ba24b" target="_blank"
+                            class="glow-btn d-flex align-items-center"><i class="fab fa-linkedin fs-5 me-2"></i>
+                            LinkedIn</a>
+                        <a href="https://github.com/mahmoud709" target="_blank"
+                            class="glow-btn-outline d-flex align-items-center"><i class="fab fa-github fs-5 me-2"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center position-relative mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <!-- Code Editor Mockup -->
+                    <div class="code-window text-start mx-auto" style="border-radius: 16px; overflow: hidden; background: #0f172a; border: 1px solid rgba(0,0,0,0.1); max-width: 440px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); transform: perspective(1000px) rotateY(-5deg) rotateX(5deg); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+                        <div class="window-header d-flex flex-row align-items-center px-4 py-3" style="background: #1e293b; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <div class="d-flex gap-2">
+                                <div class="rounded-circle" style="width: 12px; height: 12px; background: #ef4444;"></div>
+                                <div class="rounded-circle" style="width: 12px; height: 12px; background: #eab308;"></div>
+                                <div class="rounded-circle" style="width: 12px; height: 12px; background: #22c55e;"></div>
+                            </div>
+                            <span class="mx-auto" style="color: #94a3b8; font-size: 0.75rem; font-family: monospace;">developer.ts</span>
+                        </div>
+                        <div class="window-body p-4 text-light font-monospace" style="font-size: 0.9rem; line-height: 1.8;">
+                            <span style="color: #64748b;">// Frontend Engineer & Freelancer</span><br>
+                            <span style="color: #c678dd;">const</span> <span style="color: #e5c07b;">developer</span> <span style="color: #56b6c2;">=</span> {<br>
+                            &nbsp;&nbsp;<span style="color: #e06c75;">name:</span> <span style="color: #98c379;">'Mahmoud Shalaby'</span>,<br>
+                            &nbsp;&nbsp;<span style="color: #e06c75;">role:</span> <span style="color: #98c379;">'React.js Specialist'</span>,<br>
+                            &nbsp;&nbsp;<span style="color: #e06c75;">skills:</span> [<span style="color: #98c379;">'Next.js'</span>, <span style="color: #98c379;">'TypeScript'</span>],<br>
+                            &nbsp;&nbsp;<span style="color: #e06c75;">freelance_metrics:</span> {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d19a66;">rating:</span> <span style="color: #56b6c2;">5.0</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d19a66;">projects:</span> <span style="color: #98c379;">'Success'</span><br>
+                            &nbsp;&nbsp;}<br>
+                            };<br><br>
+                            <span style="color: #e5c07b;">developer</span>.<span style="color: #56b6c2;">startBuilding</span>();
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge overlay -->
+                    <div class="position-absolute bottom-0 start-0 translate-middle ms-md-5 ms-0 mb-4" style="background: var(--bg-card); padding: 1rem 1.5rem; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid var(--border-color); z-index: 2; animation: floatY 4s ease-in-out infinite;">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 40px; height: 40px; background: rgba(2, 132, 199, 0.1); color: var(--accent-blue);">
+                                <i class="fa fa-code fs-5"></i>
+                            </div>
+                            <div class="text-start" style="line-height: 1.2;">
+                                <div class="text-secondary" style="font-size: 0.70rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">Mostaql</div>
+                                <div class="fw-bold text-dark" style="font-size: 0.95rem;">Top Rated Dev</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack Footer in Hero -->
+            <div class="row mt-5 pt-5 justify-content-center" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-center text-subtle small text-uppercase fw-semibold tracking-wide mb-4">Core Technologies
+                </p>
+                <div class="col-12 d-flex justify-content-center gap-4 gap-md-5 flex-wrap">
+                    <img src="imgs/html-5.webp" class="tech-icon" alt="HTML5">
+                    <img src="imgs/css-3.webp" class="tech-icon" alt="CSS3">
+                    <img src="imgs/js.webp" class="tech-icon" alt="JS">
+                    <img src="imgs/reactjs.webp" class="tech-icon" alt="React">
+                    <img src="imgs/nodejs.webp" class="tech-icon" alt="Node.js">
+                    <img src="imgs/mongodb-icon.svg" class="tech-icon" alt="MongoDB">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Toolkit (Skills without percentages) -->
+    <section id="skills" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Toolkit</h2>
+                <p>Modern development tools and frameworks I use.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="premium-card h-100 p-4">
+                        <i class="fa fa-code fs-2 text-primary mb-3"></i>
+                        <h4 class="mb-4 fs-5" style="color: var(--text-primary)">Languages & Frameworks</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-tag">HTML</span>
+                            <span class="badge-tag">CSS</span>
+                            <span class="badge-tag">JavaScript (ES6+)</span>
+                            <span class="badge-tag">TypeScript</span>
+                            <span class="badge-tag"
+                                style="background: rgba(2, 132, 199, 0.1); border-color: rgba(2, 132, 199, 0.2); color: #0284c7;">React.js</span>
+                            <span class="badge-tag"
+                                style="background: rgba(15, 23, 42, 0.1); border-color: rgba(15, 23, 42, 0.2); color: #0f172a;">Next.js</span>
+                            <span class="badge-tag">Tailwind CSS</span>
+                            <span class="badge-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="premium-card h-100 p-4">
+                        <i class="fa fa-layer-group fs-2 text-danger mb-3"></i>
+                        <h4 class="mb-4 fs-5" style="color: var(--text-primary)">State & Versioning</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-tag">Redux</span>
+                            <span class="badge-tag">Context API</span>
+                            <span class="badge-tag">Git</span>
+                            <span class="badge-tag">GitHub</span>
+                            <span class="badge-tag">Version Control</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="premium-card h-100 p-4">
+                        <i class="fa fa-bolt fs-2 text-warning mb-3"></i>
+                        <h4 class="mb-4 fs-5" style="color: var(--text-primary)">Performance & Design</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-tag">Asset Optimization</span>
+                            <span class="badge-tag">Code Splitting</span>
+                            <span class="badge-tag">Lazy Loading</span>
+                            <span class="badge-tag">Media Queries</span>
+                            <span class="badge-tag">Flexbox & Grid</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="premium-card h-100 p-4">
+                        <i class="fa fa-cloud fs-2 text-info mb-3"></i>
+                        <h4 class="mb-4 fs-5" style="color: var(--text-primary)">Deployment & Tools</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-tag">Cloud Hosting (Vercel)</span>
+                            <span class="badge-tag">Vite</span>
+                            <span class="badge-tag">Postman</span>
+                            <span class="badge-tag">RESTful API Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="premium-card p-4 d-flex align-items-center justify-content-center text-center">
+                        <p class="mb-0 text-secondary"><strong class="text-primary">Soft Skills:</strong> Communication,
+                            Analytical and
+                            Problem-solving, Teamwork, Leadership, Drive and Initiative</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Professional Experience & Stats (Bento Layout) -->
+    <section id="experience">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Experience Text -->
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="section-label">Experience</div>
+                    <h2 class="heading-serif mb-5">Professional <span class="accent-text-blue">Work.</span></h2>
+
+                    <div class="mb-4">
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3">
+                            <div class="mb-3 mb-md-0">
+                                <h3 class="fs-4 fw-bold text-dark mb-1">React.js Developer (Freelance)</h3>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="text-primary fw-semibold"><i class="fa fa-briefcase me-1"></i> Mostaql
+                                        Platform</span>
+                                </div>
+                            </div>
+                            <span class="date-pill">Jan 2023 — Present</span>
+                        </div>
+                        <ul class="bullet-arrow-list mt-4">
+                            <li class="bullet-arrow-item">Engineered 5+ production-ready React applications, ensuring
+                                pixel-perfect Figma-to-UI
+                                translation and mobile responsiveness.</li>
+                            <li class="bullet-arrow-item">Implemented advanced animations using Tailwind CSS, increasing
+                                user engagement by 30%
+                                through enhanced interactivity.</li>
+                            <li class="bullet-arrow-item">Optimized frontend performance by streamlining state
+                                management and reducing Initial
+                                Page Load times by 40%.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 text-center mx-auto text-md-end">
-                    <div class="personalImgage ">
-                        <img src="imgs/mahmoud.png" class="img-fluid fitImg  rounded" alt="personlaImg">
+                <!-- Right: Stats Box (Image 2 Match) -->
+                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="stat-bento-card mb-3 p-4">
+                        <div class="text-secondary small fw-bold tracking-wide text-uppercase mb-3"
+                            style="letter-spacing: 0.1em;">
+                            Overall Rating on Mostaql</div>
+                        <div class="text-warning mb-2 fs-5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                            <h3 class="stat-value mb-0" style="font-size: 3.5rem;">5.0</h3>
+                            <span class="text-secondary fs-4">/ 5.0</span>
+                        </div>
+                        <div class="text-success fw-bold mt-2"><i class="fa fa-check me-1"></i> 5+ verified reviews
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <div class="stat-bento-card h-100 justify-content-center text-center p-3">
+                                <div class="text-secondary mb-2"
+                                    style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">
+                                    Projects</div>
+                                <div class="stat-value fs-4">6+</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-bento-card h-100 justify-content-center text-center p-3">
+                                <div class="text-secondary mb-2"
+                                    style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">
+                                    Experience</div>
+                                <div class="stat-value fs-4">2+ yrs</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-bento-card h-100 justify-content-center text-center p-3">
+                                <div class="text-secondary mb-2"
+                                    style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Stack
+                                </div>
+                                <div class="stat-value fs-4">6+</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About Me Section -->
-    <section class="my-skills container py-5">
-        <div class="row">
-            <div class="skills-images col-md-6">
-                <div class="aboutImages position-relative">
-                    <img src="imgs/skills.AVIF" alt="main-img" class="skill-img w-100" />
-                    <img src="imgs/file1.AVIF" alt="imgskill-2" class="img-2 position-absolute end-0" width="100" />
-                </div>
-            </div>
-            <div class="creative-skill col-md-6 d-flex flex-column align-items-start justify-content-center py-3">
-                <span class="mainColor fw-bold">My Featured Skills</span>
-                <h1 class="fw-bold">
-                    I’m using <span class="background">top leading</span> design methods
-                </h1>
-                <p class="text-dark">
-                    I Can Easily Implements Web applications Through Programming Languages
-                    Like HTML, CSS, And JavaScript,ReactJs,NodeJs,Express,MongoDB, If You Think That
-                    I am Perfect For Your Job/Project Or If You Need This Kind Of Work
-                    Contact Me
-                </p>
-            </div>
-        </div>
-        <!-- Skills -->
-        <section id="skills" class="py-5">
-            <div class="container">
-                <div class="section-title text-center">
-                    <p class="mainColor fw-bold">My technical skills and languages</p>
-                </div>
-                <div class="row container">
-                    <div class="col-md-6">
-                        <div class="skill-item my-4">
-                            <h4>HTML</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0%;" data_width="90%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item my-4">
-                            <h4>CSS</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="92%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill-item my-4">
-                            <h4>Bootstrap</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0%;" data_width="95%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item my-4">
-                            <h4>JavaScript</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="88%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill-item  my-4">
-                            <h4>React JS</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="90%">
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="skill-item my-4">
-                            <h4>Node JS</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="95%">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill-item  my-4">
-                            <h4>express</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="93%">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item my-4">
-                            <h4>MongoDB</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0"
-                                    style="width: 0%;" aria-valuemax="100" data_width="96%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- End skill Section -->
-    <!-- Projects -->
-    <section id="projects" class="py-5">
+    <!-- Key Projects (Image 3 Design) -->
+    <section id="projects" style="background: var(--bg-secondary);">
         <div class="container">
-            <div class="section-title text-center">
-                <h2 class="mainColor">Projects</h2>
-                <p>Check out some of my work</p>
+            <div class="mb-5" data-aos="fade-up">
+                <div class="section-label">Projects</div>
+                <h2 class="heading-serif">Selected <span class="accent-text-blue">Work.</span></h2>
             </div>
-            <div class="grid-container">
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/Travel.PNG" alt="project1" style="width: 100%;">
+            <div class="row justify-content-center">
+                <div class="col-12">
+
+                    <!-- Feature Project 1: FinTech Fusion -->
+                    <div class="project-bento-card" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-1">
+                            <h3 class="fs-4 fw-bold mb-2 mb-md-0 text-dark">FinTech Fusion <span
+                                    class="text-secondary fw-normal d-none d-md-inline">— Crypto Trading Platform</span>
+                            </h3>
+                            <span class="date-pill">Mar 2024 — Jan 2026</span>
+                        </div>
+                        <div class="text-secondary fw-normal d-md-none mb-3">Crypto Trading Platform</div>
+                        <div class="tech-stack-line mt-2">REACT • NEXT.JS • TYPESCRIPT</div>
+
+                        <ul class="bullet-arrow-list mt-4">
+                            <li class="bullet-arrow-item">Spearheaded the development of a crypto trading bot platform,
+                                converting complex Figma
+                                designs into responsive
+                                and accessible user interfaces.</li>
+                            <li class="bullet-arrow-item">Engineered a data-heavy trading dashboard visualizing
+                                real-time market signals and
+                                AI-driven predictions.</li>
+                            <li class="bullet-arrow-item">Architected a scalable component library using TypeScript,
+                                ensuring consistent UI and
+                                reducing technical debt.</li>
+                            <li class="bullet-arrow-item">Optimized rendering with Next.js Server Components,
+                                maintaining smooth animations
+                                during heavy data updates.</li>
+                        </ul>
                     </div>
-                    <div class="overlay position-absolute top-0 start-0 h-100 opacity-75">
-                        <a href="https://travel-system-pink.vercel.app/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+                    <!-- Feature Project 2: E-Commerce -->
+                    <div class="project-bento-card" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-1">
+                            <h3 class="fs-4 fw-bold mb-2 mb-md-0 text-dark">E-Commerce Web Application</h3>
+                            <span class="date-pill">Mar 2024 — Jun 2024</span>
+                        </div>
+
+                        <div class="tech-stack-line mt-2">REACT.JS • CONTEXT API • FORMIK • YUP</div>
+
+                        <ul class="bullet-arrow-list mt-4">
+                            <li class="bullet-arrow-item">Built a scalable e-store with dynamic filtering, secure Stripe
+                                checkouts, and global
+                                state via Context API.</li>
+                            <li class="bullet-arrow-item">Developed robust form management and schema-based validation
+                                using Formik and Yup to
+                                ensure data integrity.</li>
+                        </ul>
                     </div>
+                    <!-- Feature Project 3: Landing Pages -->
+                    <!-- <div class="project-bento-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-1">
+                            <h3 class="fs-4 fw-bold mb-2 mb-md-0 text-dark">Business Landing Pages</h3>
+                            <span class="date-pill">Jun 2024 — Dec 2024</span>
+                        </div>
+                        <div class="tech-stack-line mt-2">REACT.JS • NEXT.JS • SEO OPTIMIZATION</div>
+                        
+                        <ul class="bullet-arrow-list mt-4">
+                            <li class="bullet-arrow-item">Delivered 5+ SEO-optimized landing pages featuring complex transitions and 95+
+                                Lighthouse scores.</li>
+                            <li class="bullet-arrow-item">Leveraged Server-Side Rendering (SSR) to maximize search visibility and improve
+                                initial page load performance.</li>
+                        </ul>
+                        </div> -->
+
                 </div>
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/project2.AVIF" alt="project1" style="width: 100%;">
-                    </div>
-                    <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://courza.net/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
-                    </div>
-                </div>
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/project3.AVIF" alt="project1" style="width: 100%;">
-                    </div>
-                    <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://mahmoud709.github.io/AmairCompany/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
-                    </div>
-                </div>
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/project4.AVIF" alt="project1" style="width: 100%;">
-                    </div>
-                    <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://perwerde.net/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
-                    </div>
-                </div>
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/project5.AVIF" alt="project1" style="width: 100%;">
-                    </div>
-                    <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://rames.tech/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
-                    </div>
-                </div>
-                <div class="projectCard text-center position-relative">
-                    <div class="project-item">
-                        <img src="imgs/project6.AVIF" alt="project1" style="width: 100%;">
-                    </div>
-                    <div class="overlay position-absolute top-0 start-0">
-                        <a href="https://mahmoud709.github.io/E-commerce-Site/" target="_blank"><button
-                                class="fw-bold mx-auto center text-white p-2 border-2">Demo</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Education</h2>
+                <p>My academic background and coursework.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="premium-card position-relative overflow-hidden p-5">
+                        <div class="position-absolute end-0 top-0 p-4" style="opacity: 0.05;">
+                            <i class="fa fa-graduation-cap" style="font-size: 8rem; color: var(--accent-blue);"></i>
+                        </div>
+                        <div class="position-relative z-1">
+                            <h3 class="fs-4 fw-bold mb-2">Bachelor of Science in Computer Science</h3>
+                            <h5 class="text-primary mb-3">Menofia University</h5>
+                            <div class="d-flex flex-wrap gap-4 text-secondary mb-4 fw-medium">
+                                <span><i class="fa fa-calendar-alt me-2"></i>September 2020 — July 2024</span>
+                                <span><i class="fa fa-map-marker-alt me-2"></i>Elmenofia, Egypt</span>
+                            </div>
+                            <p class="text-secondary mb-0"><strong>Relevant Coursework:</strong> Data Structures,
+                                Algorithms, Software
+                                Engineering, Web Development.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section class="parent">
-            <div class="swiper mySwiper">
+    <!-- Client Reviews (Image 1 Layout) -->
+    <section id="reviews" style="background: var(--bg-primary);">
+        <div class="container">
+            <!-- Review Header matching Image 1 -->
+            <div class="row align-items-end mb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-label">Client Reviews</div>
+                    <h2 class="heading-serif">What clients <span class="accent-text-blue">say.</span></h2>
+                    <p class="text-secondary mt-3 fs-5">All reviews verified on <a
+                            href="https://mostaql.com/u/Mahmoud_Shalaby" target="_blank"
+                            class="text-primary text-decoration-none fw-semibold">Mostaql <i
+                                class="fa fa-arrow-up-right-from-square ms-1 small"></i></a></p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end">
+                    <div class="stat-bento-card flex-row align-items-center gap-4 py-3 px-4 w-auto m-0 shadow-sm border-0"
+                        style="background: var(--bg-secondary);">
+                        <div class="stat-value" style="font-size: 3.5rem;">5.0</div>
+                        <div>
+                            <div class="text-warning mb-1 fs-6"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <div class="text-secondary small fw-bold mb-1">5+ verified reviews</div>
+                            <div class="text-success small fw-bold"><i class="fa fa-check me-1"></i> Perfect score
+                                across all categories
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper reviewsSwiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-    </section> -->
-
-
-    <!-- Contact -->
-    <section id="contact" class="p-5">
-        <div class="container">
-            <div class="section-title text-center my-5">
-                <b class="mainColor">Get In Touch With Me</b>
-                <h3 class="fw-bold pt-3">Are You Ready To <span class="background">Work Together?</span></h3>
-                <span class="py-1">Let's Start A Project! Hire Me.</span>
-            </div>
-
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="contact-info">
-                        <p class="text-dark fw-bold">
-                            I’m Open To Any Communication! Feel Free To Contact Me Any Convenient Way!
-                            I’m Always Interested In Hearing About New Projects And Opportunities.
-                        </p>
-                        <div class="contact-me">
-                            <p><span class="fa fa-envelope-open"></span>
-                                <a href="mailto: mahmoudshalaby439@gmail.com"
-                                    class="mail">mahmoudshalaby439@gmail.com</a>
-                            </p>
-                            <p><span class="fa fa-phone"></span>
-                                <del>+1-2345-345-678-11</del>
+                    <div class="swiper-slide h-auto">
+                        <div class="testimonial-card h-100 arabic-text" dir="rtl">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="fw-bold mb-1">اسامة د.</h5>
+                                    <div class="client-rating mb-0"><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                </div>
+                                <span class="badge-tag align-self-start">برمجة موقع بلغة Laravel</span>
+                            </div>
+                            <p class="text-secondary mb-4 flex-grow-1 border-top pt-3">
+                                "عمل ممتاز جداً للامانه يستحق الامتياز عن جداره وأنصح الجميع بالتعامل معاه... اشكرك
+                                لإنجاز عملك كما انني منبهر من
+                                نتائج العمل"
                             </p>
                         </div>
                     </div>
+                    <div class="swiper-slide h-auto">
+                        <div class="testimonial-card h-100 arabic-text" dir="rtl">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="fw-bold mb-1">عمر هـ.</h5>
+                                    <div class="client-rating mb-0"><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                </div>
+                                <span class="badge-tag align-self-start">تطوير المواقع</span>
+                            </div>
+                            <p class="text-secondary mb-4 flex-grow-1 border-top pt-3">
+                                "مصمم محترف ولدية الخبره الكبيره في مجال العمل راقي جدا في التعامل وحريص على التواصل
+                                والمتابعة اثناء تنفيذ العمل"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto">
+                        <div class="testimonial-card h-100 arabic-text" dir="rtl">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Ahmed K.</h5>
+                                    <div class="client-rating mb-0"><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                </div>
+                                <span class="badge-tag align-self-start">إنشاء موقع إلكتروني</span>
+                            </div>
+                            <p class="text-secondary mb-4 flex-grow-1 border-top pt-3">
+                                "متعاون لابعد درجة ...متفاني في عمله ويتقنه بصراحة انصح بشدة بالتعامل معه لانه لا يمل في
+                                العمل ويساعدك باقصى درجة"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto">
+                        <div class="testimonial-card h-100 arabic-text" dir="rtl">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Deem A.</h5>
+                                    <div class="client-rating mb-0"><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                </div>
+                                <span class="badge-tag align-self-start">تطوير موقع قائم</span>
+                            </div>
+                            <p class="text-secondary mb-4 flex-grow-1 border-top pt-3">
+                                "الله يسعده الاستاذ ماقصر شغل احترافي وتعامل ممتاز وسرعة وسهولة فالتواصل العمل متقن جداً
+                                و شخص متفهم"
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7">
-                    <form action="https://formsubmit.co/mahmoudshalaby439@gmail.com" method="post">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingName" placeholder="name" required>
-                            <label for="floatingName">Name</label>
-                        </div>
-                        <div class="form-floating my-3">
-                            <input type="text" class="form-control" id="floatingsubject" placeholder="subject">
-                            <label for="floatingsubject">Subject</label>
-                        </div>
-                        <div class="form-floating my-3">
-                            <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea"
-                                required></textarea>
-                            <label for="floatingTextarea">Your Message</label>
-                        </div>
-                        <button class="btn btn-primary">send</button>
-                    </form>
-                </div>
+                <div class="swiper-pagination mt-4 position-relative"></div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://mostaql.com/u/mahmoud_ahmed30" target="_blank"
+                    class="glow-btn-outline px-5 py-3 rounded-pill fw-bold">
+                    <i class="fa fa-external-link-alt me-2"></i> Visit My Mostaql Profile
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="text-center text-white bg-light">
-        <div class="container">
-            <section class="py-3">
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="https://www.facebook.com/mahmoudshalaby76" target="_blank" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-                <!-- Google -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto: mahmoudshalaby439@gmail.com"
-                    target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fa fa-envelope-open"></i></a>
-                <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="https://www.instagram.com/_mahmoudshalaby/" target="_blank" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-                <!-- Github -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/mahmoud709"
-                    target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-            </section>
+    <!-- Contact & Footer -->
+    <section id="contact" class="pb-0" style="background: var(--bg-card);">
+        <div class="container text-center mb-5">
+            <div class="section-title mb-5" data-aos="fade-up">
+                <h2>Let's build together</h2>
+                <p>Feel free to reach out for collaborations or just a friendly hello.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="premium-card text-start" data-aos="zoom-in" data-aos-delay="100">
+                        <form action="https://formsubmit.co/mahmoudshalaby439@gmail.com" method="post">
+                            <div class="mb-4">
+                                <label class="text-subtle small fw-semibold mb-2">NAME</label>
+                                <input type="text" class="form-control" name="name" required
+                                    style="background: var(--bg-secondary) !important;">
+                            </div>
+                            <div class="mb-4">
+                                <label class="text-subtle small fw-semibold mb-2">EMAIL OR SUBJECT</label>
+                                <input type="text" class="form-control" name="subject" required
+                                    style="background: var(--bg-secondary) !important;">
+                            </div>
+                            <div class="mb-4">
+                                <label class="text-subtle small fw-semibold mb-2">MESSAGE</label>
+                                <textarea class="form-control" name="message" rows="4" required
+                                    style="background: var(--bg-secondary) !important;"></textarea>
+                            </div>
+                            <button type="submit" class="glow-btn w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-                effect: "coverflow",
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: "auto",
-                coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-            });
-    </script>
-    <!-- Font a wesome library -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <footer class="mt-5 py-5" style="border-top: 1px solid var(--border-color); background: var(--bg-secondary);">
+            <div class="container text-center text-subtle">
+                <div class="d-flex justify-content-center gap-4 mb-4">
+                    <a href="https://github.com/mahmoud709" target="_blank"
+                        class="text-subtle text-decoration-none fs-5"><i class="fab fa-github"></i></a>
+                    <a href="mailto:mahmoudshalaby439@gmail.com" class="text-subtle text-decoration-none fs-5"><i
+                            class="fa fa-envelope-open"></i></a>
+                    <a href="https://www.facebook.com/mahmoudshalaby76" target="_blank"
+                        class="text-subtle text-decoration-none fs-5"><i class="fab fa-facebook-f"></i></a>
+                    <a href="www.linkedin.com/in/mahmoud-shalaby-a361ba24b" target="_blank"
+                        class="text-subtle text-decoration-none fs-5"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="mb-0 small">&copy; 2026 Mahmoud Shalaby. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/4964aa4896.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Init Scroll Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Init Testimonial Slider
+        var swiper = new Swiper(".reviewsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
     <script src="app.js"></script>
 </body>
+
+</html>
